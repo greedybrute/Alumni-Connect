@@ -5,7 +5,7 @@ import HomeLayout from "../layouts/HomeLayout";
 import ProfileLayout from "../layouts/ProfileLayout";
 import ConnectionLayout from "../layouts/ConnectionLayout";
 import AboutLayout from "../layouts/AboutLayout";
-
+import WorldMap from "../components/Worldmap";
 export const router = createBrowserRouter([
   {
     path: "/",
