@@ -124,6 +124,15 @@ export default function Topbar({ currentUser }) {
               />
             </div>
           </Tooltip>
+          <Tooltip title="Maps">
+            <div>
+            <AiFillEnvironment
+            size={30}
+            className="react-icon"
+            onClick={() => goToRoute("/Worldmap")}
+          />
+            </div>
+          </Tooltip>
         </div>
       )}
       <img
