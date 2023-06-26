@@ -9,6 +9,7 @@ import {
   AiOutlineMessage,
   AiOutlineBell,
   AiOutlineQuestionCircle,
+  AiFillEnvironment
 } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { BsBriefcase } from "react-icons/bs";
@@ -129,7 +130,7 @@ export default function Topbar({ currentUser }) {
             <AiFillEnvironment
             size={30}
             className="react-icon"
-            onClick={() => goToRoute("/Worldmap")}
+            onClick={() => goToRoute("/map")}
           />
             </div>
           </Tooltip>
