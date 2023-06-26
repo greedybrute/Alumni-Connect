@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RegisterAPI } from "../api/AuthAPI";
 import { postUserData } from "../api/FirestoreAPI";
-import LinkedinLogo from "../assets/linkedinLogo.png";
+import BMPSlogo from "../assets/bmpslogo.jpg";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueId";
 import "../Sass/LoginComponent.scss";
@@ -19,7 +19,7 @@ export default function RegisterComponent() {
         name: credentails.name,
         email: credentails.email,
         imageLink:
-          "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+        "https://cdn-icons-png.flaticon.com/512/149/149071.png?w=740&t=st=1687680076~exp=1687680676~hmac=f1119401b1c0b14a0a14b5d092ef4a0c226daf21a98e0c0fd0c38ac98cd7c839",
       });
       navigate("/home");
       localStorage.setItem("userEmail", res.user.email);
@@ -31,8 +31,7 @@ export default function RegisterComponent() {
 
   return (
     <div className="login-wrapper">
-      <img src={LinkedinLogo} className="linkedinLogo" />
-
+      <img src={BMPSlogo} className="bmpsLogo" />
       <div className="login-wrapper-inner">
         <h1 className="heading">Make the most of your professional life</h1>
 
@@ -69,7 +68,7 @@ export default function RegisterComponent() {
       <hr class="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          Already on LinkedIn?{" "}
+          Already on Alumni Connect?{" "}
           <span className="join-now" onClick={() => navigate("/")}>
             Sign in
           </span>
