@@ -6,6 +6,7 @@ import ProfileLayout from "../layouts/ProfileLayout";
 import ConnectionLayout from "../layouts/ConnectionLayout";
 import AboutLayout from "../layouts/AboutLayout";
 import WorldMap from "../components/Worldmap";
+import MapLayout from "../layouts/MapLayout";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
     element: <AboutLayout />,
   },
   {
-    path: "/aboutUs",
-    element: <Worldmap />,
-  }
+    path: "/map",
+    element: <MapLayout />,
+  },
 ]);
