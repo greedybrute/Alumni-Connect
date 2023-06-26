@@ -7,6 +7,10 @@ import "./index.scss";
 
 export default function ProfilePopup() {
   let navigate = useNavigate();
+  const logOut = async () => {
+    let res = await onLogout();
+    navigate("/");
+  };
   const [currentUser, setCurrentUser] = useState({});
   useMemo(() => {
     getCurrentUser(setCurrentUser);
@@ -25,7 +29,7 @@ export default function ProfilePopup() {
           })
         }
       />
-      <Button title="Log out" onClick={onLogout} />
+      <Button title="Log out" onClick={logOut} />
     </div>
   );
 }
