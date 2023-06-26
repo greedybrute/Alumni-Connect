@@ -65,7 +65,7 @@ function WorldMap() {
                     </b>
                     </p>
                     <p>
-                    ${users[code]}
+                    ${users[code] || 0}
                     </p>
                     </div>`);
         }}
