@@ -61,7 +61,7 @@ export default function LoginComponent() {
       <div className="google-btn-container">
       <GoogleButton className='google-btn' onClick={googleSignIn} />
         <p className="go-to-signup">
-          New to LinkedIn?{" "}
+          New to Alumni Connect?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
             Join now
           </span>
